@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchor1" prefHeight="379.0" prefWidth="555.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.SampleController">
+   <children>
+      <Label layoutX="40.0" layoutY="26.0" text="Aynı Yöne Giden 2 Aracın t Süre Sonra Arasındaki Mesafe Nedir?">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="141.0" text="Araç 1 in Hızı">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="173.0" text="Araç 2 in Hızı">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="203.0" text="Süre">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_hız1" alignment="CENTER_RIGHT" layoutX="182.0" layoutY="137.0" promptText="Km" />
+      <TextField fx:id="txt_hız2" alignment="CENTER_RIGHT" layoutX="182.0" layoutY="169.0" promptText="Km" />
+      <TextField fx:id="txt_süre" alignment="CENTER_RIGHT" layoutX="182.0" layoutY="199.0" promptText="Saat" />
+      <Label layoutX="55.0" layoutY="258.0" text="Aradaki Mesafe:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnHesapla" layoutX="343.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnHesapla_click" text="Hesapla" />
+      <Label fx:id="lblSonuc" layoutX="194.0" layoutY="263.0" text="...km">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnTemizle" layoutX="416.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnTemizle_click" text="Temizle" />
+   </children>
+</AnchorPane>

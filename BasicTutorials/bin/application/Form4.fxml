@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.Form4Controller">
+   <children>
+      <PasswordField fx:id="txtSifre" layoutX="114.0" layoutY="112.0" promptText="Şifre" />
+      <TextField fx:id="txtKullanıcıAdı" layoutX="114.0" layoutY="65.0" promptText="Kullanıcı Adı" />
+      <Button fx:id="btnlogin" layoutX="52.0" layoutY="166.0" mnemonicParsing="false" onAction="#btnlogin_click" prefHeight="100.0" prefWidth="100.0" text="Login" />
+      <Button fx:id="btnBilgi" layoutX="155.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnBilgi_click" prefHeight="100.0" prefWidth="100.0" text="Alert Bilgi" />
+      <Button fx:id="btnCombo" layoutX="263.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnCombo_click" prefHeight="100.0" prefWidth="100.0" text="Combo Dialog" />
+      <Button fx:id="btnİnput" layoutX="155.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnİnput_click" prefHeight="100.0" prefWidth="100.0" text="İnput Dialog" />
+      <Button fx:id="btnSoru" layoutX="52.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnSoru_click" prefHeight="100.0" prefWidth="100.0" text="Soru" />
+      <Button fx:id="btnHata" layoutX="263.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnHata_click" prefHeight="100.0" prefWidth="100.0" text="AlertHata" />
+      <Button fx:id="btnCikis" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnCikis_click" prefHeight="100.0" prefWidth="100.0" text="Çıkış" />
+   </children>
+</AnchorPane>
