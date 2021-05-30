@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor_tum" prefHeight="400.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <AnchorPane fx:id="anchor_sol" layoutX="-1.0" prefHeight="400.0" prefWidth="160.0" style="-fx-background-color: #8ed34e;" />
+      <AnchorPane fx:id="anchor_sag" layoutX="159.0" prefHeight="400.0" prefWidth="317.0" style="-fx-background-color: #e6f1dc;">
+         <children>
+            <Button fx:id="btn_ic" layoutX="95.0" layoutY="74.0" mnemonicParsing="false" onAction="#btn_ic_Click" prefHeight="43.0" prefWidth="150.0" text="İç Stage" />
+            <Button fx:id="btn_dis" layoutX="95.0" layoutY="139.0" mnemonicParsing="false" onAction="#btn_dis_Click" prefHeight="43.0" prefWidth="150.0" text="Dış Stage" />
+            <Button fx:id="btn_trans" layoutX="95.0" layoutY="200.0" mnemonicParsing="false" onAction="#btn_trans_Click" prefHeight="43.0" prefWidth="150.0" text="Transparan Stage" />
+            <Button fx:id="btn_menu" layoutX="259.0" layoutY="3.0" mnemonicParsing="false" onAction="#btn_menu_Click" prefHeight="43.0" prefWidth="55.0" text="Menu" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

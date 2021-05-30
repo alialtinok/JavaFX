@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/" fx:controller="application.SampleController">
+   <children>
+      <Spinner fx:id="spin1" layoutX="54.0" layoutY="55.0" prefHeight="26.0" prefWidth="149.0" />
+      <Spinner fx:id="spin2" layoutX="225.0" layoutY="55.0" prefHeight="26.0" prefWidth="149.0" />
+      <Spinner fx:id="spin3" layoutX="54.0" layoutY="104.0" prefHeight="26.0" prefWidth="149.0" />
+      <Spinner fx:id="spin4" layoutX="225.0" layoutY="104.0" prefHeight="26.0" prefWidth="149.0" />
+      <Spinner fx:id="spin5" layoutX="54.0" layoutY="155.0" prefHeight="26.0" prefWidth="149.0" />
+      <Spinner fx:id="spin6" layoutX="225.0" layoutY="155.0" prefHeight="26.0" prefWidth="149.0" />
+      <Spinner fx:id="spin7" layoutX="54.0" layoutY="206.0" prefHeight="26.0" prefWidth="149.0" />
+      <Spinner fx:id="spin8" layoutX="225.0" layoutY="206.0" prefHeight="26.0" prefWidth="149.0" />
+      <Slider fx:id="slider1" layoutX="54.0" layoutY="300.0" />
+      <Slider fx:id="slider2" layoutX="336.0" layoutY="249.0" orientation="VERTICAL" />
+      <Label fx:id="lbl1" layoutX="78.0" layoutY="389.0" text="Değer: " />
+   </children>
+</AnchorPane>

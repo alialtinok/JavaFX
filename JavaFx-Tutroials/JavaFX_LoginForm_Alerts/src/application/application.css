@@ -1,0 +1,14 @@
+.background{
+	-fx-background-image: "/application/back.jpg";
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 100% 100%;	
+}
+
+
+.menum{
+	-fx-background-color: red;
+}
+
+.menum:hover{
+	-fx-background-color: yellow;
+}

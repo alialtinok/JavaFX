@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <VBox layoutX="186.0" layoutY="50.0" prefHeight="386.0" prefWidth="450.0" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="kayitlar_table" onMouseClicked="#kayitlar_table_Click" prefHeight="209.0" prefWidth="450.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="kul_adi" prefWidth="75.0" text="Kullanici" />
+                  <TableColumn fx:id="sifre" prefWidth="75.0" text="Sifre" />
+                  <TableColumn fx:id="yorum" prefWidth="75.0" text="Yorum" />
+                  <TableColumn fx:id="secili" prefWidth="75.0" text="Seç" />
+                  <TableColumn fx:id="buton_sutun" prefWidth="75.0" text="Buton" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txt_kul" prefHeight="57.0" prefWidth="450.0" promptText="Kullanıcı Adı">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_sifre" prefHeight="57.0" prefWidth="450.0" promptText="Şifre">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <HBox prefHeight="84.0" prefWidth="450.0">
+               <children>
+                  <Button fx:id="btn_ekle" mnemonicParsing="false" onAction="#btn_ekle_Click" prefHeight="76.0" prefWidth="79.0" text="Ekle" />
+                  <Button fx:id="btn_sil" mnemonicParsing="false" onAction="#btn_sil_Click" prefHeight="76.0" prefWidth="79.0" text="Sil" />
+                  <Button fx:id="btn_goster" mnemonicParsing="false" onAction="#btn_goster_Click" prefHeight="76.0" prefWidth="71.0" text="Göster" />
+                  <Button fx:id="btn_guncelle" mnemonicParsing="false" onAction="#btn_guncelle_Click" prefHeight="76.0" prefWidth="77.0" text="Güncelle" />
+                  <Button fx:id="btn_yorum" mnemonicParsing="false" onAction="#btn_yorum_Click" prefHeight="76.0" prefWidth="77.0" text="Yorum" />
+                  <Button fx:id="btn_secili" mnemonicParsing="false" onAction="#btn_secili_Click" prefHeight="76.0" prefWidth="77.0" text="Seçilenler" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

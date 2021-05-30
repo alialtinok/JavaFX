@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/" fx:controller="application.SampleController">
+   <center>
+      <AnchorPane prefHeight="343.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_RIGHT" layoutX="161.0" layoutY="51.0" prefHeight="314.0" prefWidth="450.0" AnchorPane.bottomAnchor="-13.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="txt_kul" prefHeight="57.0" prefWidth="450.0" promptText="Mail" text="\@iste.edu.tr">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="txt_pass" prefHeight="52.0" prefWidth="450.0" promptText="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="btn_giris" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn_giris_Click" prefHeight="43.0" prefWidth="90.0" text="Giriş" />
+                  <HBox prefHeight="86.0" prefWidth="450.0">
+                     <children>
+                        <Button fx:id="btn_alertbilgi" mnemonicParsing="false" onAction="#btn_Alertbilgi_Click" prefHeight="87.0" prefWidth="145.0" text="Alert Bilgi">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_hata" mnemonicParsing="false" onAction="#btn_Hata_Click" prefHeight="87.0" prefWidth="145.0" text="Alert Hata">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_soru" mnemonicParsing="false" onAction="#btn_soru_Click" prefHeight="87.0" prefWidth="145.0" text="Alert Soru">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btn_input" mnemonicParsing="false" onAction="#btn_input_Click" prefHeight="87.0" prefWidth="145.0" text="Alert Text">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_Combo" mnemonicParsing="false" onAction="#btn_Combo_click" prefHeight="87.0" prefWidth="145.0" text="Alert Combo">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_Cikis" mnemonicParsing="false" onAction="#btn_Cikis_click" prefHeight="87.0" prefWidth="145.0" text="Çıkış">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
